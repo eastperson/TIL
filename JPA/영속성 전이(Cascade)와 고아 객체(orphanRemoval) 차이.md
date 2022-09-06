@@ -117,12 +117,12 @@ void orphanRemovalTest(){
 
 ## Conclusion
 
-1. **`CascadeType.REMOVE`**는 부모 자식의 참조관계가 있는 경우 부모가 삭제되었을 때, 자식들을 삭제한다.
-2. **`orphanRemoval = true`**는 부모 자식의 참조관계가 있는 경우 부모와 자식과 관계가 끊어졌을 때, 자식들을 삭제한다.
+1. `CascadeType.REMOVE`는 부모 자식의 참조관계가 있는 경우 부모가 삭제되었을 때, 자식들을 삭제한다.
+2. `orphanRemoval = true`는 부모 자식의 참조관계가 있는 경우 부모와 자식과 관계가 끊어졌을 때, 자식들을 삭제한다.
 
-즉, 둘은 모두 부모 관계가 있는 경우 부모가 삭제되면 자식들이 전부 삭제되고 부모와 관계가 없는 자식들은 영향을 주지 않는다. 하지만 `**CascadeType.REMOVE**`는 관계를 끊는다고 자식들을 제거하지 않는다. **`orphanRemoval = true`**는 관계를 끊는 순간 자식들도 제거한다.
+즉, 둘은 모두 부모 관계가 있는 경우 부모가 삭제되면 자식들이 전부 삭제되고 부모와 관계가 없는 자식들은 영향을 주지 않는다. 하지만 `CascadeType.REMOVE`는 관계를 끊는다고 자식들을 제거하지 않는다. `orphanRemoval = true`는 관계를 끊는 순간 자식들도 제거한다.
 
-그래서 자식 생명주기를 을 부모 엔티티에게 완전히 영속화시키려고 하면 **`CascadeType.All, orphanRemoval = true`**를 동시에 사용하여 관리한다. 이는  DDD(DomainDrivenDesign) 도메인 주도 설계의 AggregateRoot개념을 구현할 때, 유용하다. 단, Aggregate하나당 Repository하나인 것을 추천한다.
+그래서 자식 생명주기를 을 부모 엔티티에게 완전히 영속화시키려고 하면 `CascadeType.All, orphanRemoval = true`를 동시에 사용하여 관리한다. 이는  DDD(DomainDrivenDesign) 도메인 주도 설계의 AggregateRoot개념을 구현할 때, 유용하다. 단, Aggregate하나당 Repository하나인 것을 추천한다.
 
 ## Reference
 
