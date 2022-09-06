@@ -1,5 +1,5 @@
-### @OneToOne의 FetchType 기본전략
-- @OneToOne의 기본전략은 EAGER이다.
+### `@OneToOne`의 FetchType 기본전략
+- `@OneToOne`의 기본전략은 EAGER이다.
 
 ```java
 @Target({METHOD, FIELD})
