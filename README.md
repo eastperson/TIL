@@ -4,3 +4,4 @@ Today I Learned
 
 ### JPA
 - [@OneToOne에서 FetchType.LAZY가 작동하지 않을 때](https://github.com/eastperson/TIL/blob/main/JPA/@OneToOne%EC%97%90%EC%84%9C%20FetchType.LAZY%EA%B0%80%20%EC%9E%91%EB%8F%99%ED%95%98%EC%A7%80%20%EC%95%8A%EC%9D%84%20%EB%95%8C.md)
+- [영속성 전이(Cascade)와 고아 객체(orphanRemoval) 차이](https://github.com/eastperson/TIL/blob/main/JPA/%EC%98%81%EC%86%8D%EC%84%B1%20%EC%A0%84%EC%9D%B4(Cascade)%EC%99%80%20%EA%B3%A0%EC%95%84%20%EA%B0%9D%EC%B2%B4(orphanRemoval)%20%EC%B0%A8%EC%9D%B4.md)
