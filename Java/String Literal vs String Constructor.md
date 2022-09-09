@@ -1,3 +1,5 @@
+# String Literal과 String Constructor의 차이
+
 ![image](https://user-images.githubusercontent.com/66561524/189258100-9b325e22-9718-46bc-8cd4-c50435ac9a16.png)
 
 키워드
@@ -21,7 +23,7 @@ String cat2 = cat;
 
 또한 String 객체는 내부적으로 `hashcode()`와 `equals()`를 오버라이딩해서 사용한다.
 
-`String`의 `hashcode()` 메모리 주소값을 의미하는게 아니므로 비교하는 것은 의미가 없고 주소값을 비교하기 위해서는 '`==`'를 사용하는 것이 옳다.결론적으로 리터럴 `"cat"`과 `new String("cat")`은 다른 객체이며 처음 스트링 리터럴을 호출하는 것은 객체를 생성한다고 보기 힘들기 때문에 객체 생성은 1번된다.
+`String`의 `hashcode()` 메모리 주소값을 의미하는게 아니므로 비교하는 것은 의미가 없고 주소값을 비교하기 위해서는 '`==`'를 사용하는 것이 옳다.결론적으로 리터럴 `"cat"`과 `new String("cat")`은 다른 객체이며 처음 스트링 리터럴을 호출하는 것은 객체를 생성한다고 보기 힘들기 때문에 한 번만 객체 생성이 된다.
 
 ```java
     @Test
@@ -78,6 +80,12 @@ String cat2 = cat;
         return h;
     }
 ```
+
+# String Constant Pool의 장점
+- Java Runtime시 Heap 영역을 절약할 수 있다.
+- 불변객체로서 관리가 되기 때문에 Thread-safe하다.
+- String의 hashcode를 생성단계에서 캐싱하므로 String의 hashcode를 계산하지 않아도 된다. HashMap을 사용할 때 기능상 이점이 있다.
+
 
 [[Java] 핵심정리 (1) - String 객체를 중심으로](https://victorydntmd.tistory.com/133)
 
