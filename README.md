@@ -8,3 +8,6 @@ Today I Learned
 
 ### Kotlin
 - [Kotlin의 check()와 require()](https://github.com/eastperson/TIL/blob/main/Kotlin/Kotlin%EC%9D%98%20check()%EC%99%80%20require().md)
+
+### Java
+- [String Literal vs String Constructor](https://github.com/eastperson/TIL/blob/main/Java/String%20Literal%20vs%20String%20Constructor.md)
