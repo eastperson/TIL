@@ -11,6 +11,7 @@ Today I Learned
 
 ### Java
 - [String Literal vs String Constructor](https://github.com/eastperson/TIL/blob/main/Java/String%20Literal%20vs%20String%20Constructor.md)
+- [BigDecimal를 사용하는 이유](https://github.com/eastperson/TIL/blob/main/Java/BigDecimal%EB%A5%BC%20%EC%82%AC%EC%9A%A9%ED%95%98%EB%8A%94%20%EC%9D%B4%EC%9C%A0.md)
 
 ### Design Pattern
 - [Flyweight Pattern](https://github.com/eastperson/TIL/blob/main/Design_Pattern/Flyweight%20Pattern.md)
