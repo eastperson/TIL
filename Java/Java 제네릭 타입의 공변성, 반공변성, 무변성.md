@@ -161,15 +161,7 @@ List<? super Cat> list4 = new ArrayList<RussianBlueCat>(); // 컴파일 에러
 
 - [Java Generics Interview Questions (+Answers)](https://www.baeldung.com/java-generics-interview-questions)
 
-- [[kotlin] 코틀린 차곡차곡 - 10. 인라인(inline) 함수와 reified 키워드](https://sabarada.tistory.com/176)
-
 - [[Java] Generic Type erasure란 무엇일까?](https://devlog-wjdrbs96.tistory.com/263)
-
-- [[Kotlin 강좌] 22. 인라인 함수 (Inline Functions)](https://m.blog.naver.com/yuyyulee/221389623237)
-
-- [Inline functions | Kotlin](https://kotlinlang.org/docs/inline-functions.html)
-
-- [Inline functions | Kotlin](https://kotlinlang.org/docs/inline-functions.html#reified-type-parameters)
 
 - [Variance in programming languages](https://rubber-duck-typing.com/posts/2018-05-01-variance-in-programming-languages.html)
 
