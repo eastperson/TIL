@@ -4,7 +4,7 @@ Today I Learned
 ### Java
 - [String Literal vs String Constructor](https://github.com/eastperson/TIL/blob/main/Java/String%20Literal%20vs%20String%20Constructor.md)
 - [BigDecimal를 사용하는 이유](https://github.com/eastperson/TIL/blob/main/Java/BigDecimal%EB%A5%BC%20%EC%82%AC%EC%9A%A9%ED%95%98%EB%8A%94%20%EC%9D%B4%EC%9C%A0.md)
-- [Java의 제네릭 타입의 공변성, 반공변성, 무변성](https://github.com/eastperson/TIL/blob/main/Java/Java%EC%9D%98%20%EC%A0%9C%EB%84%A4%EB%A6%AD%20%ED%83%80%EC%9E%85%EC%9D%98%20%EA%B3%B5%EB%B3%80%EC%84%B1%2C%20%EB%B0%98%EA%B3%B5%EB%B3%80%EC%84%B1%2C%20%EB%AC%B4%EB%B3%80%EC%84%B1.md)
+- [Java 제네릭 타입의 공변성, 반공변성, 무변성](https://github.com/eastperson/TIL/blob/main/Java/Java%EC%9D%98%20%EC%A0%9C%EB%84%A4%EB%A6%AD%20%ED%83%80%EC%9E%85%EC%9D%98%20%EA%B3%B5%EB%B3%80%EC%84%B1%2C%20%EB%B0%98%EA%B3%B5%EB%B3%80%EC%84%B1%2C%20%EB%AC%B4%EB%B3%80%EC%84%B1.md)
 
 ### Kotlin
 - [Kotlin의 check()와 require()](https://github.com/eastperson/TIL/blob/main/Kotlin/Kotlin%EC%9D%98%20check()%EC%99%80%20require().md)
