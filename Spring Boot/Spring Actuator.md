@@ -257,7 +257,19 @@ HttpTraceRepository traceRepository(){
 
 ### 그 밖의 엔드포인트
 
-[액추에이터 엔드포인트 (1)](https://www.notion.so/a4c35a2a8b08449498353ceadb24e02f)
+### 액추에이터 엔드포인트
+
+| 액추에이터 엔드포인트 | 설명 |
+| --- | --- |
+| /actuator/auditevents | 감사(audit) 이벤트 표시 |
+| /actuator/beans | 직접 작성한 빈과 자동설정에 의해 애플리케이션 컨텍스트에 등록된 모든 빈 표시 |
+| /actuator/caches | 모든 캐시 정보 표시 |
+| /actuator/conditions | 스프링 부트 자동설정 기준 조건 표시 |
+| /actuator/configprops | 모든 환경설정 정보 표시 |
+| /actuator/env | 현재 시스템 환경 정보 표시 |
+| /actuator/flyway | 등록된 플라이웨이(Flyway) 데이터베이스 마이그레이션 도구 표시 |
+| /actuator/mappings | 모든 스프링 웹플럭스 경로 표시 |
+| /actuator/metrics | 마이크로미터(micrometer)를 사용해서 수집하는 지표(metrics) 표시 |
 
 다만 이러한 Actuator가 제공하는 정보는 서버에 민감한 정보이므로 보안에 신경을 많이 써야한다. 또한 데이터가 메모리상에서 저장이 되기 때문에 영속화 시킬 수 있는 방법을 구상해야한다.
 
