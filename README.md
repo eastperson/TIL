@@ -9,6 +9,7 @@ Today I Learned
 
 ### Kotlin
 - [Kotlin의 check()와 require()](https://github.com/eastperson/TIL/blob/main/Kotlin/Kotlin%EC%9D%98%20check()%EC%99%80%20require().md)
+- [Kotlin Checked Exception 처리](https://github.com/eastperson/TIL/blob/main/Kotlin/Kotlin%20Checked%20Exception%20%EC%B2%98%EB%A6%AC.md)
 
 ### JVM
 - [Runtime Data Area](https://github.com/eastperson/TIL/blob/main/JVM/Runtime%20Data%20Area.md)
