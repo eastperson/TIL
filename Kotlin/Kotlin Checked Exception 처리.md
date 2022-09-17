@@ -1,6 +1,6 @@
 자바에서는 메서드 내 발생할 수 있는 Checked Exception을 throws하면 그 메서드를 호출하는 쪽에서 예외처리를 강제한다. 처리를 하려면 또 그 메서드를 호출하는 쪽으로 throws를 하거나 try-catch 등을 해줘야 한다.
 
-| AS | TO |
+| | |
 | ----- | ------ |
 | ![image](https://user-images.githubusercontent.com/66561524/190850465-9791b318-2c1c-46c9-8f80-a68fc27092e0.png) | ![image](https://user-images.githubusercontent.com/66561524/190850474-eca383c4-b056-4235-861e-86f491b9a7e2.png) |
 하위 메서드에서 throws한 예외는 상위메서드에서 안잡으면 컴파일 에러가 발생한다. | 하위 메서드에서 넘어온 checked 예외는 또 다른 상위 메서드로 넘기거나
@@ -13,7 +13,7 @@ try-catch를 해줘야 한다. | 물론 하위 메서드에서도 throws나 try-
 
 코틀린은 exception을 자바에게 상속받았음에도 불구하고 자바와 동작을 달리한다. 다른 최신 언어들처럼 코틀린 개발자도 Checked Exception을 포함하지 않기로 했다. (코틀린인액션)
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/880f5036-93da-4d69-bb12-72804653e9d8/Untitled.png)
+![image](https://user-images.githubusercontent.com/66561524/190850949-c8a9e5a4-2321-4195-a22f-494730149492.png)
 
 [Java's checked exceptions were a mistake (and here's what I would like to do about it)](https://radio-weblogs.com/0122027/stories/2003/04/01/JavasCheckedExceptionsWereAMistake.html)
 
