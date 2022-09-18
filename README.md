@@ -26,3 +26,6 @@ Today I Learned
 
 ### WEB
 - [그런 REST API로 괜찮은가?](https://github.com/eastperson/TIL/blob/main/WEB/%EA%B7%B8%EB%9F%B0%20REST%20API%EB%A1%9C%20%EA%B4%9C%EC%B0%AE%EC%9D%80%EA%B0%80%3F.md)
+
+### AWS
+- [EBS 확장 방법](https://github.com/eastperson/TIL/blob/main/AWS/EBS%20%ED%99%95%EC%9E%A5%20%EB%B0%A9%EB%B2%95.md)
