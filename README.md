@@ -14,6 +14,9 @@ Today I Learned
 ### JVM
 - [Runtime Data Area](https://github.com/eastperson/TIL/blob/main/JVM/Runtime%20Data%20Area.md)
 
+### Spring
+- [생성자 주입 사용 이유](https://github.com/eastperson/TIL/blob/main/Spring/%EC%83%9D%EC%84%B1%EC%9E%90%20%EC%A3%BC%EC%9E%85%20%EC%82%AC%EC%9A%A9%20%EC%9D%B4%EC%9C%A0.md)
+
 ### Spring Boot
 - [Spring Actuator](https://github.com/eastperson/TIL/blob/main/Spring%20Boot/Spring%20Actuator.md)
 - [Spring Boot Developer Tools](https://github.com/eastperson/TIL/blob/main/Spring%20Boot/Spring%20Boot%20Developer%20Tools.md)
