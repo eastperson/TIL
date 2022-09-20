@@ -1,4 +1,4 @@
-## Spring Actuator
+## Spring Boot Actuator
 
 Spring Boot [공식 Reference](https://docs.spring.io/spring-boot/docs/2.1.8.RELEASE/reference/html/production-ready.html)에 나와있는 Actuator에 대한 설명
 
