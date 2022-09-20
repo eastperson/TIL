@@ -31,5 +31,8 @@ Today I Learned
 ### WEB
 - [그런 REST API로 괜찮은가?](https://github.com/eastperson/TIL/blob/main/WEB/%EA%B7%B8%EB%9F%B0%20REST%20API%EB%A1%9C%20%EA%B4%9C%EC%B0%AE%EC%9D%80%EA%B0%80%3F.md)
 
+### 자료구조&알고리즘
+- [알고리즘 수행시간 분석 방법](https://github.com/eastperson/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%26%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98%20%EC%88%98%ED%96%89%EC%8B%9C%EA%B0%84%20%EB%B6%84%EC%84%9D%20%EB%B0%A9%EB%B2%95.md)
+
 ### AWS
 - [EBS 확장 방법](https://github.com/eastperson/TIL/blob/main/AWS/EBS%20%ED%99%95%EC%9E%A5%20%EB%B0%A9%EB%B2%95.md)
