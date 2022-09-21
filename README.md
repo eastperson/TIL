@@ -24,6 +24,7 @@ Today I Learned
 ### JPA
 - [@OneToOne에서 FetchType.LAZY가 작동하지 않을 때](https://github.com/eastperson/TIL/blob/main/JPA/@OneToOne%EC%97%90%EC%84%9C%20FetchType.LAZY%EA%B0%80%20%EC%9E%91%EB%8F%99%ED%95%98%EC%A7%80%20%EC%95%8A%EC%9D%84%20%EB%95%8C.md)
 - [영속성 전이(Cascade)와 고아 객체(orphanRemoval) 차이](https://github.com/eastperson/TIL/blob/main/JPA/%EC%98%81%EC%86%8D%EC%84%B1%20%EC%A0%84%EC%9D%B4(Cascade)%EC%99%80%20%EA%B3%A0%EC%95%84%20%EA%B0%9D%EC%B2%B4(orphanRemoval)%20%EC%B0%A8%EC%9D%B4.md)
+- [@Modifying 사용시 영속성 컨텍스트 1차 캐시와 DB 간 데이터 동기화 문제](https://github.com/eastperson/TIL/blob/main/JPA/%40Modifying%20%EC%82%AC%EC%9A%A9%EC%8B%9C%20%EC%98%81%EC%86%8D%EC%84%B1%20%EC%BB%A8%ED%85%8D%EC%8A%A4%ED%8A%B8%201%EC%B0%A8%20%EC%BA%90%EC%8B%9C%EC%99%80%20DB%20%EA%B0%84%20%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EB%8F%99%EA%B8%B0%ED%99%94%20%EB%AC%B8%EC%A0%9C.md)
 
 ### Design Pattern
 - [Flyweight Pattern](https://github.com/eastperson/TIL/blob/main/Design_Pattern/Flyweight%20Pattern.md)
