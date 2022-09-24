@@ -33,7 +33,7 @@ java에서 변수를 선언하면 stack 영역에 할당된다. 원시 타입(pr
 
 원시 타입은 Stack 영역에 위치한다.
 
-```
+```java
 public class PrimitiveTypeTest {
 
     @Test
@@ -70,7 +70,7 @@ public class PrimitiveTypeTest {
 참조 타입은 변수 자체가 stack 영역에 생성되지만 실제 객체는 heap 영역에 위치한다.
 stack에 있는 변수가 heap에 있는 객체를 바라보고 있는 형태다.
 
-```
+```java
 class User {
     public int age;
 
