@@ -149,6 +149,10 @@ Java는 by reference로 함수를 호출하거나 파라미터를 전달하지 �
 > - The Java Programming (David Holmes, Ken Arnold, James Gosling)
 
 - 자바의 "reference"는 "reference value"를 줄인 말이다. 레퍼런스 값(value)이다.
+- 자바에서의 reference 용어와 프로그래밍 언어의 'by reference'와 혼동에서 생기는 문제이다.
+- 다시 말하지만 자바에서는 call by reference가 없다. call by reference value라고 불릴 수는 있다. 하지만 결국 call by value이다.
+
+![image](https://user-images.githubusercontent.com/66561524/192079504-07bfdc66-f069-463d-a8fb-b8b07e0e78d4.png)
 
 [토비 이사님 post](https://www.facebook.com/tobyilee/posts/10222585502760852) 
 
