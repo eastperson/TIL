@@ -34,6 +34,9 @@ Today I Learned
 - [그런 REST API로 괜찮은가?](https://github.com/eastperson/TIL/blob/main/WEB/%EA%B7%B8%EB%9F%B0%20REST%20API%EB%A1%9C%20%EA%B4%9C%EC%B0%AE%EC%9D%80%EA%B0%80%3F.md)
 
 ### 자료구조&알고리즘
+
+- [추상 데이터 타입(Abstract Data Type)](https://github.com/eastperson/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%26%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EC%B6%94%EC%83%81%20%EB%8D%B0%EC%9D%B4%ED%84%B0%20%ED%83%80%EC%9E%85(Abstract%20Data%20Type).md)
+
 - [알고리즘 수행시간 분석 방법](https://github.com/eastperson/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%26%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98%20%EC%88%98%ED%96%89%EC%8B%9C%EA%B0%84%20%EB%B6%84%EC%84%9D%20%EB%B0%A9%EB%B2%95.md)
 
 - [수행시간의 점근표기법](https://github.com/eastperson/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%26%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EC%88%98%ED%96%89%EC%8B%9C%EA%B0%84%EC%9D%98%20%EC%A0%90%EA%B7%BC%ED%91%9C%EA%B8%B0%EB%B2%95.md)
