@@ -398,3 +398,6 @@ public class Foo {
 참고
 
 - [https://docs.oracle.com/javase/tutorial/java/javaOO/methodreferences.html](https://docs.oracle.com/javase/tutorial/java/javaOO/methodreferences.html)
+
+
+- [백기선 - 더 자바, Java 8](https://www.inflearn.com/course/the-java-java8)
