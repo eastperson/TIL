@@ -222,4 +222,4 @@ Thread pool 환경에서 ThreadLocal 사용하는 경우 보관된 데이터 사
 
 ---
 
-[](https://www.baeldung.com/java-threadlocal)
+[java-threadlocal](https://www.baeldung.com/java-threadlocal)
