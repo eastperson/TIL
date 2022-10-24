@@ -1,5 +1,5 @@
 # TIL
-Today I Learned
+📝 Today I Learned
 
 ### Java
 - [String Literal vs String Constructor](https://github.com/eastperson/TIL/blob/main/Java/String%20Literal%20vs%20String%20Constructor.md)
