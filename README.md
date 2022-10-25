@@ -39,6 +39,7 @@
 
 ### WEB
 - [그런 REST API로 괜찮은가?](https://github.com/eastperson/TIL/blob/main/WEB/%EA%B7%B8%EB%9F%B0%20REST%20API%EB%A1%9C%20%EA%B4%9C%EC%B0%AE%EC%9D%80%EA%B0%80%3F.md)
+- [API 버저닝 ](https://github.com/eastperson/TIL/blob/main/WEB/API%20%EB%B2%84%EC%A0%80%EB%8B%9D%20%EC%9C%A0%ED%98%95.md)
 
 ### Database
 
