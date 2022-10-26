@@ -36,4 +36,4 @@
 
 [API Change Strategy | Nordic APIs |](https://nordicapis.com/api-change-strategy/)
 
-[네이버쇼핑](https://search.shopping.naver.com/book/catalog/32491903647)
+[스프링 부트 실전 활용 마스터](https://search.shopping.naver.com/book/catalog/32491903647)
