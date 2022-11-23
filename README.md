@@ -16,6 +16,7 @@
 ### Kotlin
 - [Kotlin의 check()와 require()](https://github.com/eastperson/TIL/blob/main/Kotlin/Kotlin%EC%9D%98%20check()%EC%99%80%20require().md)
 - [Kotlin Checked Exception 처리](https://github.com/eastperson/TIL/blob/main/Kotlin/Kotlin%20Checked%20Exception%20%EC%B2%98%EB%A6%AC.md)
+- [Value Class (Inline Class)](https://github.com/eastperson/TIL/blob/main/Kotlin/Value%20Class%20(Inline%20Class).md)
 
 ### Javascript
 - [Javascript Service Worker](https://github.com/eastperson/TIL/blob/main/Javascript/Service%20Worker.md)
