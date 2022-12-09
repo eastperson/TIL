@@ -12,6 +12,8 @@
 - [CompletableFuture](https://github.com/eastperson/TIL/blob/main/Java/CompletableFuture.md)
 - [함수형 인터페이스와 SAM(Single Abstract Method), 그리고 람다](https://github.com/eastperson/TIL/blob/main/Java/%ED%95%A8%EC%88%98%ED%98%95%20%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4%EC%99%80%20SAM(Single%20Abstract%20Method)%2C%20%EA%B7%B8%EB%A6%AC%EA%B3%A0%20%EB%9E%8C%EB%8B%A4.md)
 - [ThreadLocal](https://github.com/eastperson/TIL/blob/main/Java/ThreadLocal.md)
+- [Checked Exception은 Java의 Biggest Mistake다](https://github.com/eastperson/TIL/blob/main/Java/Checked%20Exception%EC%9D%80%20Java%EC%9D%98%20Biggest%20Mistake%EB%8B%A4.md)
+
 
 ### Kotlin
 - [Kotlin의 check()와 require()](https://github.com/eastperson/TIL/blob/main/Kotlin/Kotlin%EC%9D%98%20check()%EC%99%80%20require().md)
