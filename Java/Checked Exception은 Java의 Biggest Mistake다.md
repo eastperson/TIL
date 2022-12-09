@@ -1,6 +1,5 @@
 # Overview
 
----
 
 최근 여러 책을 읽으면서 `CheckedException`과 `UncheckedException`에 대한 의견을 보았고 상반된 의견을 정리해보았다.
 
@@ -10,7 +9,6 @@
 
 # Checked Exception은 필요하다.
 
----
 
 2003년에 James Gosling을 Checked Exception에 대한 주제로 인터뷰한 내용이다. 이 당시 일부 개발자는 Checked Exception은 강력한 애플리케이션을 구축하는 데 도움이 된다고 생각하고 반대로 생산성을 저해한다는 의견이 분분했던 시절이다.
 
@@ -53,27 +51,16 @@
 
 스프링 Transactional API는 checked exception은 에러로 잡지 않는다.
 
-<aside>
-💡 *In its default configuration, the Spring Framework’s transaction infrastructure code marks a transaction for rollback only in the case of runtime, unchecked exceptions. That is, when the thrown exception is an instance or subclass of `RuntimeException`. ( `Error` instances also, by default, result in a rollback). Checked exceptions that are thrown from a transactional method do not result in rollback in the default configuration.*
-
-</aside>
+> *In its default configuration, the Spring Framework’s transaction infrastructure code marks a transaction for rollback only in the case of runtime, unchecked exceptions. That is, when the thrown exception is an instance or subclass of `RuntimeException`. ( `Error` instances also, by default, result in a rollback). Checked exceptions that are thrown from a transactional method do not result in rollback in the default configuration.*
 
 - 스프링 프레임워크의 트랜잭션 인프라 코드는 오직 런타임에서 발생하는 unchecked 예외에서만 롤백마크를 찍는다.
 - Checked 예외는 롤백을 발생시키지 않는다.
 
-<aside>
-💡 This is defined behaviour. From the [docs](http://static.springsource.org/spring/docs/3.0.x/spring-framework-reference/html/transaction.html#transaction-declarative-attransactional-settings):
-
+> This is defined behaviour. From the [docs](http://static.springsource.org/spring/docs/3.0.x/spring-framework-reference/html/transaction.html#transaction-declarative-attransactional-settings):
 > Any RuntimeException triggers rollback, and any checked Exception does not.
-> 
-
-This is common behaviour across all Spring transaction APIs. By default, if a `RuntimeException` is thrown from within the transactional code, the transaction will be rolled back. If a checked exception (i.e. not a `RuntimeException`) is thrown, then the transaction will not be rolled back.
-
-The rationale behind this is that `RuntimeException` classes are generally taken by Spring to denote unrecoverable error conditions.
-
-This behaviour can be changed from the default, if you wish to do so, but how to do this depends on how you use the Spring API, and how you set up your transaction manager.
-
-</aside>
+> This is common behaviour across all Spring transaction APIs. By default, if a `RuntimeException` is thrown from within the transactional code, the transaction will be rolled back. If a checked exception (i.e. not a `RuntimeException`) is thrown, then the transaction will not be rolled back.
+> The rationale behind this is that `RuntimeException` classes are generally taken by Spring to denote unrecoverable error conditions.
+> This behaviour can be changed from the default, if you wish to do so, but how to do this depends on how you use the Spring API, and how you set up your transaction manager.
 
 - 그 이유는 RuntimeException 클래스가 일반적으로 Spring에서 복구 불가능한 오류 조건을 나타내기 위해 사용하기 때문이다.
 - Checked 예외는 수동으로 설정을 해줘야지 롤백으로 만들 수 있다.
@@ -86,11 +73,8 @@ EJB 시절부터 있었던 관습이라고 한다.
 
 코틀린에서는 checked exception이 없다. 코틀린 공식 문서에서는 자바를 제외한 다른 언어는 checked exception이 없고 코틀린도 이를 따른다며 checked exception이 없는 이유를 서술했다.
 
-<aside>
-💡 Examination of small programs leads to the conclusion that requiring exception specifications could both enhance developer productivity and enhance code quality, but experience with large software projects suggests a different result – decreased productivity and little or no increase in code quality.
-- Bruce Eckel (Thinking in Java의 저자)
-
-</aside>
+> Examination of small programs leads to the conclusion that requiring exception specifications could both enhance developer productivity and enhance code quality, but experience with large software projects suggests a different result – decreased productivity and little or no increase in code quality.
+> - Bruce Eckel (Thinking in Java의 저자)
 
 - 소규모 프로그램을 검사하면 예외 사항을 요구하는 것이 개발자의 생산성과 코드 품질을 향상시킬 수 있다는 결론으로 이어진다.
 - 그러나 대규모 소프트웨어 프로젝트에서는 생산성이 저하되고 코드 품질이 전혀 향상되지 않았다는 결과가 나타났다.
@@ -140,8 +124,6 @@ try {
 
 # Conclusion
 
----
-
 자바의 예외는 이전 언어에 비해 안정성 및 오류 처리면에서 장점이 있었습니다. checked exception은 ‘실패’가 아닌 ‘우발적인 상황’을 처리하려는 시도였습니다. 예측가능한 예외를 강조하고 개발자가 이를 처리하게 하는 것이었습니다.
 
 하지만 광범위한 시스템과 복구 불가능한 실패를 강제로 선언하는 것에 대해서는 생각을 하지 못했습니다. 이러한 실패는 checked exception으로 선언될 수 없었습니다.
@@ -154,7 +136,6 @@ java 8 이후에서는 람다는 앞으로의 근본적인 단계이다. 이러�
 
 # Reference
 
----
 
 [2절 체크 예외(checked exception)만 던지세요](https://www.notion.so/2-checked-exception-986904e4b2e94890aa1db21adfdac720) 
 
