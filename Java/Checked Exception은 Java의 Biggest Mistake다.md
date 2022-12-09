@@ -122,7 +122,7 @@ try {
 
 [Checked Exceptions are Evil](https://phauer.com/2015/checked-exceptions-are-evil/)
 
-# Conclusion
+### Conclusion
 
 자바의 예외는 이전 언어에 비해 안정성 및 오류 처리면에서 장점이 있었습니다. checked exception은 ‘실패’가 아닌 ‘우발적인 상황’을 처리하려는 시도였습니다. 예측가능한 예외를 강조하고 개발자가 이를 처리하게 하는 것이었습니다.
 
@@ -133,6 +133,28 @@ try {
 Spring, Hibernate 등의 자바 프레임워크/벤더는 런타임 예외만 사용합니다. Josh Bloch(Java Collections 프레임워크), Rod Johnson, Anders Hejlsberg(C#의 아버지), Gavin King 및 Stephen Coebourn(JodaTime)과 같은 인물은 모두 checked 예외에 반대했습니다.
 
 java 8 이후에서는 람다는 앞으로의 근본적인 단계이다. 이러한 기능은 내부의 기능적 작업에서 ‘제어 흐름’을 추상화 한다. checked 예외와 ‘즉시 선언 또는 처리’에 대한 요구 사항을 무용지물로 만든다.
+
+
+## Clean Code (Robert C. Martin)
+
+### 미확인(uncheked) 예외를 사용하라
+
+- 논쟁은 끝났다. 여러 해 동안 자바 개발자들은 checked exception의 장단점을 놓고 논쟁을 벌여왔다.
+- 처음으로 자바가 공개되었을 때 checked exception을 멋진 아이디어로 생각했다.
+- 하지만 지금은 안정적인 소프트웨어를 제작하는 요소로 확인된 예외가 반드시 필요하지 않다는 사실이 분명해졌다.
+    - C#은 checked exception을 지원하지 않는다.
+    - C++도 checked exception을 지원하지 않는다.
+    - 파이썬과 루비도 checked exception을 지원하지 않는다.
+- checked exception이 치르는 비용에 상응하는 이익을 제공하는지 철저히 따져봐야 한다.
+    - OCP(Open Closed Principle)을 위반한다.
+        - 메서드에서 checked exception을 던졌는데 catch 블록이 세 단계 위에 있다면 그 사이 메서드 모두가 선언부에 해당 예외를 정의해야 한다.
+            - 하위 단계에서 코드를 변경하면 상위 단계 메서드 선언부를 전부 고쳐야 한다.
+        - 모듈과 관련된 코드가 전혀 바뀌지 않았더라도 (선언부가 바뀌었으므로) 모듈을 다시 빌드한 다음에 배포해야 한다.
+    - 대규모 시스템에서 호출이 일어나는 방식
+        - 최상위 함수가 아래 함수를 호출한다. 아래 함수는 그 아래 함수를 호출한다. 단계를 내려갈수록 호출하는 함수 수는 늘어난다. 최하위 함수에서 checked exception을 추가하면 그 함수를 호출하는 함수에 모두 throws를 추가해야 한다.
+        - throws 경로에 위치하는 모든 함수가 최하위 함수에서 던지는 예외를 알아야 하므로 캡슐화가 깨진다.
+    - 때로는 확인된 예외도 유용하다. 하지만 일반적인 애플리케이션은 의존성이라는 비용이 이익보다 크다.
+
 
 # Reference
 
