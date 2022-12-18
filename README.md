@@ -60,7 +60,7 @@
 
 - [수행시간의 점근표기법](https://github.com/eastperson/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%26%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EC%88%98%ED%96%89%EC%8B%9C%EA%B0%84%EC%9D%98%20%EC%A0%90%EA%B7%BC%ED%91%9C%EA%B8%B0%EB%B2%95.md)
 
-- [해시테이블(Hash Table)](https://github.com/eastperson/TIL/blob/main/자료구조%26알고리즘/해시테이블(Hash Table).md)
+- [해시테이블(Hash Table)](https://github.com/eastperson/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%26%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%ED%95%B4%EC%8B%9C%ED%85%8C%EC%9D%B4%EB%B8%94(Hash%20Table).md)
 
 ### Infra
 - [Load Balancer](https://github.com/eastperson/TIL/blob/main/Infra/Load%20Balancer.md)
