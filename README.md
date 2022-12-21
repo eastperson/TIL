@@ -67,3 +67,6 @@
 
 ### AWS
 - [EBS 확장 방법](https://github.com/eastperson/TIL/blob/main/AWS/EBS%20%ED%99%95%EC%9E%A5%20%EB%B0%A9%EB%B2%95.md)
+
+### OS
+- [동시성(Concurrency) vs 병렬성(Parallelism)](https://github.com/eastperson/TIL/blob/main/OS/%EB%8F%99%EC%8B%9C%EC%84%B1(Concurrency)%20vs%20%EB%B3%91%EB%A0%AC%EC%84%B1(Parallelism).md)
