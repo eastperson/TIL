@@ -63,6 +63,7 @@
 - [배열(Array)](https://github.com/eastperson/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%26%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EB%B0%B0%EC%97%B4(Array).md)
 - [단순 연결 리스트(Singly Linked List), 이중연결리스트(Doubly Linked List), 원형연결리스트(Circular Linked List)](https://github.com/eastperson/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%26%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EB%8B%A8%EC%88%9C%20%EC%97%B0%EA%B2%B0%20%EB%A6%AC%EC%8A%A4%ED%8A%B8(Singly%20Linked%20List)%2C%20%EC%9D%B4%EC%A4%91%EC%97%B0%EA%B2%B0%EB%A6%AC%EC%8A%A4%ED%8A%B8(Doubly%20Linked%20List)%2C%20%EC%9B%90%ED%98%95%EC%97%B0%EA%B2%B0%EB%A6%AC%EC%8A%A4%ED%8A%B8(Circular%20Linked%20List).md)
 - [해시테이블(Hash Table)](https://github.com/eastperson/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%26%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%ED%95%B4%EC%8B%9C%ED%85%8C%EC%9D%B4%EB%B8%94(Hash%20Table).md)
+- [스택(Stack)](https://github.com/eastperson/TIL/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0%26%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/%EC%8A%A4%ED%83%9D(Stack).md)
 
 ### Infra
 - [Load Balancer](https://github.com/eastperson/TIL/blob/main/Infra/Load%20Balancer.md)
