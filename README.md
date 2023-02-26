@@ -32,7 +32,7 @@
 - [트랜잭션 동기화(Transaction Synchronization)와 DataSourceUtils](https://github.com/eastperson/TIL/blob/main/Spring/%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98%20%EB%8F%99%EA%B8%B0%ED%99%94(Transaction%20Synchronization)%EC%99%80%20DataSourceUtils.md)
 
 ### Spring Boot
-- [Spring Actuator](https://github.com/eastperson/TIL/blob/main/Spring%20Boot/Spring%20Boot%20Actuator.md)
+- [Spring Boot Actuator](https://github.com/eastperson/TIL/blob/main/Spring%20Boot/Spring%20Boot%20Actuator.md)
 - [Spring Boot Developer Tools](https://github.com/eastperson/TIL/blob/main/Spring%20Boot/Spring%20Boot%20Developer%20Tools.md)
 
 ### JPA
