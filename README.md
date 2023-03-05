@@ -30,6 +30,7 @@
 - [생성자 주입을 사용해야하는 이유](https://github.com/eastperson/TIL/blob/main/Spring/%EC%83%9D%EC%84%B1%EC%9E%90%20%EC%A3%BC%EC%9E%85%20%EC%82%AC%EC%9A%A9%20%EC%9D%B4%EC%9C%A0.md)
 - [@Transactional의 전파(propagation)와 격리(isolation)](https://github.com/eastperson/TIL/blob/main/Spring/%40Transactional%EC%9D%98%20%EC%A0%84%ED%8C%8C(propagation)%EC%99%80%20%EA%B2%A9%EB%A6%AC(isolation).md)
 - [트랜잭션 동기화(Transaction Synchronization)와 DataSourceUtils](https://github.com/eastperson/TIL/blob/main/Spring/%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98%20%EB%8F%99%EA%B8%B0%ED%99%94(Transaction%20Synchronization)%EC%99%80%20DataSourceUtils.md)
+- [@Bean 메서드와 @Configuration 클래스의 관계](https://github.com/eastperson/TIL/blob/main/Spring/%40Bean%20%EB%A9%94%EC%84%9C%EB%93%9C%EC%99%80%20%40Configuration%20%ED%81%B4%EB%9E%98%EC%8A%A4%EC%9D%98%20%EA%B4%80%EA%B3%84.md)
 
 ### Spring Boot
 - [Spring Boot Actuator](https://github.com/eastperson/TIL/blob/main/Spring%20Boot/Spring%20Boot%20Actuator.md)
