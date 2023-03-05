@@ -191,6 +191,13 @@ public @interface Configuration {
 	boolean proxyBeanMethods() default true;
 ```
 
+> The optional name of a method to call on the bean instance upon closing the application context, for example a close() method on a JDBC DataSource implementation, or a Hibernate SessionFactory object. The method must have no arguments but may throw any exception.
+> As a convenience to the user, the container will attempt to infer a destroy method against an object returned from the @Bean method. For example, given an @Bean method returning an Apache Commons DBCP BasicDataSource, the container will notice the close() method available on that object and automatically register it as the destroyMethod. This 'destroy method inference' is currently limited to detecting only public, no-arg methods named 'close' or 'shutdown'. The method may be declared at any level of the inheritance hierarchy and will be detected regardless of the return type of the @Bean method (i.e., detection occurs reflectively against the bean instance itself at creation time).
+> To disable destroy method inference for a particular @Bean, specify an empty string as the value, e.g. @Bean(destroyMethod=""). Note that the org.springframework.beans.factory.DisposableBean callback interface will nevertheless get detected and the corresponding destroy method invoked: In other words, destroyMethod="" only affects custom close/shutdown methods and java.io.Closeable/AutoCloseable declared close methods.
+Note: Only invoked on beans whose lifecycle is under the full control of the factory, which is always the case for singletons but not guaranteed for any other scope.
+> See Also:
+> org.springframework.beans.factory.DisposableBean, org.springframework.context.ConfigurableApplicationContext.close()
+
 proxyBeanMethods는 디폴트로 true는 proxy 객체를 생성해서 만든다. 이 경우 `@Configuration`이 붙은 클래스는CGLib을 이용해서 프록시 클래스로 확장을 해서 `@Bean`이 붙은 메소드의 동작 방식을 변경한다. `@Bean` 메소드를 직접 호출해서 다른 빈의 의존 관계를 설정할 때 여러번 호출되더라도 싱
 글톤 빈처럼 참조할 수 있도록 매번 같은 오브젝트를 리턴하게 한다.
 
