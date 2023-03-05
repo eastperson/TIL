@@ -164,39 +164,18 @@ void proxyCommonMethod() {
 
 위의 방식과 같이 proxyObject를 통해서 생성하는 빈 객체를 하나로만 만들어서 등록할 수 있다. 만약 이 방식을 사용하고 싶지 않으면 어떻게 해야할까? 스프링 `@Configuration`을 사용할 때 `proxyBeanMethods` 설정을 바꿔주면 된다. 
 
-```java
-public @interface Configuration {
-
-.
-.
-.
-	 * Specify whether {@code @Bean} methods should get proxied in order to enforce
-	 * bean lifecycle behavior, e.g. to return shared singleton bean instances even
-	 * in case of direct {@code @Bean} method calls in user code. This feature
-	 * requires method interception, implemented through a runtime-generated CGLIB
-	 * subclass which comes with limitations such as the configuration class and
-	 * its methods not being allowed to declare {@code final}.
-	 * <p>The default is {@code true}, allowing for 'inter-bean references' via direct
-	 * method calls within the configuration class as well as for external calls to
-	 * this configuration's {@code @Bean} methods, e.g. from another configuration class.
-	 * If this is not needed since each of this particular configuration's {@code @Bean}
-	 * methods is self-contained and designed as a plain factory method for container use,
-	 * switch this flag to {@code false} in order to avoid CGLIB subclass processing.
-	 * <p>Turning off bean method interception effectively processes {@code @Bean}
-	 * methods individually like when declared on non-{@code @Configuration} classes,
-	 * a.k.a. "@Bean Lite Mode" (see {@link Bean @Bean's javadoc}). It is therefore
-	 * behaviorally equivalent to removing the {@code @Configuration} stereotype.
-	 * @since 5.2
-	 */
-	boolean proxyBeanMethods() default true;
-```
-
 > The optional name of a method to call on the bean instance upon closing the application context, for example a close() method on a JDBC DataSource implementation, or a Hibernate SessionFactory object. The method must have no arguments but may throw any exception.
+> 
 > As a convenience to the user, the container will attempt to infer a destroy method against an object returned from the @Bean method. For example, given an @Bean method returning an Apache Commons DBCP BasicDataSource, the container will notice the close() method available on that object and automatically register it as the destroyMethod. This 'destroy method inference' is currently limited to detecting only public, no-arg methods named 'close' or 'shutdown'. The method may be declared at any level of the inheritance hierarchy and will be detected regardless of the return type of the @Bean method (i.e., detection occurs reflectively against the bean instance itself at creation time).
+> 
 > To disable destroy method inference for a particular @Bean, specify an empty string as the value, e.g. @Bean(destroyMethod=""). Note that the org.springframework.beans.factory.DisposableBean callback interface will nevertheless get detected and the corresponding destroy method invoked: In other words, destroyMethod="" only affects custom close/shutdown methods and java.io.Closeable/AutoCloseable declared close methods.
 Note: Only invoked on beans whose lifecycle is under the full control of the factory, which is always the case for singletons but not guaranteed for any other scope.
+> 
 > See Also:
+> 
 > org.springframework.beans.factory.DisposableBean, org.springframework.context.ConfigurableApplicationContext.close()
+
+![image](https://user-images.githubusercontent.com/66561524/222946351-94295807-a90f-49e4-9155-ea0bc6b35099.png)
 
 proxyBeanMethods는 디폴트로 true는 proxy 객체를 생성해서 만든다. 이 경우 `@Configuration`이 붙은 클래스는CGLib을 이용해서 프록시 클래스로 확장을 해서 `@Bean`이 붙은 메소드의 동작 방식을 변경한다. `@Bean` 메소드를 직접 호출해서 다른 빈의 의존 관계를 설정할 때 여러번 호출되더라도 싱
 글톤 빈처럼 참조할 수 있도록 매번 같은 오브젝트를 리턴하게 한다.
