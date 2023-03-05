@@ -1,68 +1,57 @@
 # @Bean
 
----
-
 스프링 프레임워크에서 수동으로 빈을 등록하기 위해서는 `@Bean` 어노테이션을 사용해야 합니다. `@Bean` 어노테이션에 작성되어있는 java doc 내용을 확인해보겠습니다.
 
-<aside>
-💡 ***`@Bean` Methods in `@Configuration` Classes***
-
-`@Bean` Methods in @Configuration Classes
+> ***`@Bean` Methods in `@Configuration` Classes***
+> 
+> `@Bean` Methods in @Configuration Classes
 Typically, `@Bean` methods are declared within `@Configuration` classes. In this case, bean methods may reference other `@Bean` methods in the same class by calling them directly. This ensures that references between beans are strongly typed and navigable. Such so-called 'inter-bean references' are guaranteed to respect scoping and AOP semantics, just like getBean() lookups would. These are the semantics known from the original 'Spring JavaConfig' project which require CGLIB subclassing of each such configuration class at runtime. As a consequence, `@Configuration` classes and their factory methods must not be marked as final or private in this mode. For example:
-
-```java
-@Configuration
-public class AppConfig {
-   @Bean
-   public FooService fooService() {
-       return new FooService(fooRepository());
-   }
-
-   @Bean
-   public FooRepository fooRepository() {
-       return new JdbcFooRepository(dataSource());
-   }
-
-   // ...
-}
-```
-
-</aside>
+> 
+> ```java
+> @Configuration
+> public class AppConfig {
+>    @Bean
+>    public FooService fooService() {
+>        return new FooService(fooRepository());
+>    }
+> 
+>    @Bean
+>    public FooRepository fooRepository() {
+>        return new JdbcFooRepository(dataSource());
+>    }
+>    // ...
+> }
+> ```
 
 내용을 보면 `@Bean`으로 등록하는 객체는 일반적으로 `@Configuration` 이 선언되어있는 클래스안에서 선언한다고 나와있습니다. 이 경우 Bean이 선언되어있는 메서드는 동일한 클래스에서 다른 Bean 메서드를 직접 호출하여 참조할 수 있습니다. 이렇게 ‘inter-bean references’ 불리는 빈이 빈을 참조하는 경우 AOP semantics와 respect scoping으로 보장됩니다. 이는 CGLIB의 프록시 패턴으로 적용이 되므로 `@Configuration` 클래스와 팩토리 메서드는 final 혹은 private으로 선언되서는 안됩니다.
 
-<aside>
-💡 ***`@Bean` Lite Mode***
-
-`@Bean` methods may also be declared within classes that are not annotated with `@Configuration`. For example, bean methods may be declared in a `@Component` class or even in a plain old class. In such cases, a `@Bean` method will get processed in a so-called 'lite' mode.
-
-Bean methods in lite mode will be treated as plain factory methods by the container (similar to factory-method declarations in XML), with scoping and lifecycle callbacks properly applied. The containing class remains unmodified in this case, and there are no unusual constraints for the containing class or the factory methods.
+>  ***`@Bean` Lite Mode***
+> 
+> `@Bean` methods may also be declared within classes that are not annotated with `@Configuration`. For example, bean methods may be declared in a `@Component` class or even in a plain old class. In such cases, a `@Bean` method will get processed in a so-called 'lite' mode.
+> 
+> Bean methods in lite mode will be treated as plain factory methods by the container (similar to factory-method declarations in XML), with scoping and lifecycle callbacks properly applied. The containing class remains unmodified in this case, and there are no unusual constraints for the containing class or the factory methods.
 In contrast to the semantics for bean methods in `@Configuration` classes, 'inter-bean references' are not supported in lite mode. Instead, when one @Bean-method invokes another @Bean-method in lite mode, the invocation is a standard Java method invocation; Spring does not intercept the invocation via a CGLIB proxy. This is analogous to inter-`@Transactional` method calls where in proxy mode, Spring does not intercept the invocation — Spring does so only in AspectJ mode.
-
-For example:
-
-```java
-@Component
-public class Calculator {
-
-	public int sum(int a, int b) {
-		return a+b;
-	}
-
-   @Bean
-   public MyBean myBean() {
-       return new MyBean();
-   }
-}
-```
-
-</aside>
+> 
+> For example:
+> 
+> ```java
+> @Component
+> public class Calculator {
+> 
+> 	public int sum(int a, int b) {
+> 		return a+b;
+> 	}
+> 
+>    @Bean
+>    public MyBean myBean() {
+>        return new MyBean();
+>    }
+> }
+> ```
 
 `@Configuration` 외부에서 `@Bean` 메서드로 등록하는 경우는 라이트(lite) 모드라고 불립니다. 라이트 모드의 빈 메서드는 일반 팩토리 메서드로 취급되며 스코핑 및 라이프사이클 콜백이 적절하게 적용됩니다.  `@Configuration` 클래스와 달리 라이트 모드에서는 빈 간 참조가 지원되지 않습니다. 하나의 `@Bean` 메서드가 라이트모드에서 다른 `@Bean` 메서드를 호출할 때 Java 메서드 호출일 뿐이며 CGLIB 프록시를 통해 호출을 가로채지 않습니다. 
 
 # @Configuration이 @Bean을 관리하는 방식
-
----
 
 ```java
 public class ConfigurationTest {
