@@ -20,14 +20,14 @@ class MemberService(
 				// 1. 회원 등록
         val savedMember = register(registerMemberRequestData)
 				
-				// 2. 회원 등록 이벤트 발행
-				val registeredMemberEvent = RegisteredMemberEvent(savedMember.id!!, savedMember.email!!)
-				applicationEventPublisher.publishEvent(registeredMemberEvent)
+	// 2. 회원 등록 이벤트 발행
+	val registeredMemberEvent = RegisteredMemberEvent(savedMember.id!!, savedMember.email!!)
+	applicationEventPublisher.publishEvent(registeredMemberEvent)
 
-				return RegisterMemberResponseData(memberId = savedMember.id)
-		}
+	return RegisterMemberResponseData(memberId = savedMember.id)
+     }
 
-		private fun register(requestData: RegisterMemberRequestData): Member {
+    private fun register(requestData: RegisterMemberRequestData): Member {
         val newMember = Member(nickname = requestData.nickname, email = requestData.email)
         return memberRepository.save(newMember)
     }
