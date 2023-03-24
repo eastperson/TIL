@@ -32,6 +32,7 @@
 - [트랜잭션 동기화(Transaction Synchronization)와 DataSourceUtils](https://github.com/eastperson/TIL/blob/main/Spring/%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98%20%EB%8F%99%EA%B8%B0%ED%99%94(Transaction%20Synchronization)%EC%99%80%20DataSourceUtils.md)
 - [@Bean 메서드와 @Configuration 클래스의 관계](https://github.com/eastperson/TIL/blob/main/Spring/%40Bean%20%EB%A9%94%EC%84%9C%EB%93%9C%EC%99%80%20%40Configuration%20%ED%81%B4%EB%9E%98%EC%8A%A4%EC%9D%98%20%EA%B4%80%EA%B3%84.md)
 - [JPA Entity 내부에서 이벤트를 발행하려면?](https://github.com/eastperson/TIL/blob/main/Spring/JPA%20Entity%20%EB%82%B4%EB%B6%80%EC%97%90%EC%84%9C%20%EC%9D%B4%EB%B2%A4%ED%8A%B8%EB%A5%BC%20%EB%B0%9C%ED%96%89%ED%95%98%EB%A0%A4%EB%A9%B4%3F.md)
+- [Spring Framework 6의 3 가지 REST Clients](https://github.com/eastperson/TIL/blob/main/Spring/Spring%20Framework%206%EC%9D%98%203%20%EA%B0%80%EC%A7%80%20REST%20Clients.md)
 
 ### Spring Boot
 - [Spring Boot Actuator](https://github.com/eastperson/TIL/blob/main/Spring%20Boot/Spring%20Boot%20Actuator.md)
