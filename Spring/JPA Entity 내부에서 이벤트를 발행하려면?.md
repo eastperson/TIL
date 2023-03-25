@@ -46,7 +46,7 @@ class MemberEventHandler(
 }
 ```
 
-지금은 서비스 로직에 `applicationEventPublisher`를 주입하여 발행을 하고 있다. 하지만 POJO로 풍부한 도메인 모델(Rich Model)을 구현하거나 JPA Entity에 선언된 메서드에서 Event를 발행하려면 어떻게 해야할까?
+지금은 서비스 로직에 `applicationEventPublisher`를 주입하여 발행을 하고 있다. 하지만 POJO로 풍부한 도메인 모델(Rich Domain Model)을 구현하거나 JPA Entity에 선언된 메서드에서 Event를 발행하려면 어떻게 해야할까?
 
 소개드릴 방법 4가지가 있다.
 
