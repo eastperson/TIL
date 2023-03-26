@@ -75,3 +75,6 @@
 
 ### Security
 - [Checksum](https://github.com/eastperson/TIL/blob/main/Security/Checksum.md)
+
+### 조직문화
+- [콘웨이의 법칙(Conway’s Law)](https://github.com/eastperson/TIL/blob/main/team/%EC%BD%98%EC%9B%A8%EC%9D%B4%EC%9D%98%20%EB%B2%95%EC%B9%99(Conway%E2%80%99s%20Law).md)
