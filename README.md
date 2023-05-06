@@ -53,6 +53,7 @@
 
 ### Database
 - [FK 사용에 대해](https://github.com/eastperson/TIL/blob/main/Database/FK%20%EC%82%AC%EC%9A%A9%EC%97%90%20%EB%8C%80%ED%95%B4.md)
+- [2PC(two-phase commit)](https://github.com/eastperson/TIL/blob/main/Database/2PC(two-phase%20commit).md)
 
 ### 자료구조 & 알고리즘
 
