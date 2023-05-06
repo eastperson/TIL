@@ -1,6 +1,6 @@
 # Overview
 
-DB, Message Broker, Service 등이 여러개로 분산되어있는 경우 데이터의 일관성을 유지하기 위해서 분산 트랜잭션을 이용한다. X/Open DTP(Distributed Transaction Processing, 분산 트랜잭션 처리) 모델(X/Open XA)은 분산 트랜잭션 관리의 사실상 표준이었다. 이때 XAsms 2PC(two-phase commit, 2단계 커밋)을 이용해 트랜잭션 참여자가 반드시 커밋 아니면 롤백을 할 수 있도록보장한다. 대표적으로 자바는 JTA 기술을 이용하여 분산 트랜잭션을 수행한다.
+DB, Message Broker, Service 등이 여러개로 분산되어있는 경우 데이터의 일관성을 유지하기 위해서 분산 트랜잭션을 이용한다. X/Open DTP(Distributed Transaction Processing, 분산 트랜잭션 처리) 모델(X/Open XA)은 분산 트랜잭션 관리의 사실상 표준이었다. 이때 XA 2PC(two-phase commit, 2단계 커밋)을 이용해 트랜잭션 참여자가 반드시 커밋 아니면 롤백을 할 수 있도록보장한다. 대표적으로 자바는 JTA 기술을 이용하여 분산 트랜잭션을 수행한다.
 
 하지만 현대의 분산 트랜잭션은 이러한 방식을 이용하지 않는다. NoSQL DB, 메시지 브로커 기술은 분산 트랜잭션을 지원하지 않는다. 이외에도 동기 IPC 형태여서 가용성이 떨어지는 점도 문제가 되었다.
 
