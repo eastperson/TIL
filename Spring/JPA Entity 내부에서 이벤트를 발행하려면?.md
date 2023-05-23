@@ -17,7 +17,7 @@ class MemberService(
 ) {
 
     fun registerProcess(registerMemberRequestData: RegisterMemberRequestData): RegisterMemberResponseData {
-				// 1. 회원 등록
+	// 1. 회원 등록
         val savedMember = register(registerMemberRequestData)
 				
 	// 2. 회원 등록 이벤트 발행
