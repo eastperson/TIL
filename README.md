@@ -74,6 +74,7 @@
 
 ### OS
 - [동시성(Concurrency) vs 병렬성(Parallelism)](https://github.com/eastperson/TIL/blob/main/OS/%EB%8F%99%EC%8B%9C%EC%84%B1(Concurrency)%20vs%20%EB%B3%91%EB%A0%AC%EC%84%B1(Parallelism).md)
+- [Cache 알아보기](https://github.com/eastperson/TIL/blob/main/OS/Cache%20%EC%95%8C%EC%95%84%EB%B3%B4%EA%B8%B0.md)
 
 ### Security
 - [Checksum](https://github.com/eastperson/TIL/blob/main/Security/Checksum.md)
