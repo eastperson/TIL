@@ -79,7 +79,7 @@
 ### Security
 - [Checksum](https://github.com/eastperson/TIL/blob/main/Security/Checksum.md)
 
-### Sentinel
+### Redis
 - [Sentinel](https://github.com/eastperson/TIL/blob/main/Redis/Sentinel.md)
 
 ### 조직문화
