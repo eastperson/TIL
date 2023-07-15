@@ -80,6 +80,7 @@
 - [Checksum](https://github.com/eastperson/TIL/blob/main/Security/Checksum.md)
 
 ### Redis
+- [Redis Database(RDB)](https://github.com/eastperson/TIL/blob/main/Redis/RDB(Redis%20Database).md)
 - [Sentinel](https://github.com/eastperson/TIL/blob/main/Redis/Sentinel.md)
 
 ### 조직문화
