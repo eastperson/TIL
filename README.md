@@ -81,6 +81,7 @@
 
 ### Redis
 - [Redis Database(RDB)](https://github.com/eastperson/TIL/blob/main/Redis/RDB(Redis%20Database).md)
+- [AOF](https://github.com/eastperson/TIL/blob/main/Redis/AOF.md)
 - [Sentinel](https://github.com/eastperson/TIL/blob/main/Redis/Sentinel.md)
 
 ### 조직문화
