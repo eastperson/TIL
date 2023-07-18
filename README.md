@@ -24,6 +24,7 @@
 - [Javascript Service Worker](https://github.com/eastperson/TIL/blob/main/Javascript/Service%20Worker.md)
 
 ### JVM
+- [GC](https://github.com/eastperson/TIL/blob/main/JVM/GC.md)
 - [Runtime Data Area](https://github.com/eastperson/TIL/blob/main/JVM/Runtime%20Data%20Area.md)
 
 ### Spring
