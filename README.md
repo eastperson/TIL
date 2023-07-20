@@ -32,7 +32,6 @@
 - [@Transactional의 전파(propagation)와 격리(isolation)](https://github.com/eastperson/TIL/blob/main/Spring/%40Transactional%EC%9D%98%20%EC%A0%84%ED%8C%8C(propagation)%EC%99%80%20%EA%B2%A9%EB%A6%AC(isolation).md)
 - [트랜잭션 동기화(Transaction Synchronization)와 DataSourceUtils](https://github.com/eastperson/TIL/blob/main/Spring/%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98%20%EB%8F%99%EA%B8%B0%ED%99%94(Transaction%20Synchronization)%EC%99%80%20DataSourceUtils.md)
 - [@Bean 메서드와 @Configuration 클래스의 관계](https://github.com/eastperson/TIL/blob/main/Spring/%40Bean%20%EB%A9%94%EC%84%9C%EB%93%9C%EC%99%80%20%40Configuration%20%ED%81%B4%EB%9E%98%EC%8A%A4%EC%9D%98%20%EA%B4%80%EA%B3%84.md)
-- [JPA Entity 내부에서 이벤트를 발행하려면?](https://github.com/eastperson/TIL/blob/main/Spring/JPA%20Entity%20%EB%82%B4%EB%B6%80%EC%97%90%EC%84%9C%20%EC%9D%B4%EB%B2%A4%ED%8A%B8%EB%A5%BC%20%EB%B0%9C%ED%96%89%ED%95%98%EB%A0%A4%EB%A9%B4%3F.md)
 - [Spring Framework 6의 3 가지 REST Clients](https://github.com/eastperson/TIL/blob/main/Spring/Spring%20Framework%206%EC%9D%98%203%20%EA%B0%80%EC%A7%80%20REST%20Clients.md)
 
 ### Spring Boot
@@ -43,6 +42,7 @@
 - [@OneToOne에서 FetchType.LAZY가 작동하지 않을 때](https://github.com/eastperson/TIL/blob/main/JPA/@OneToOne%EC%97%90%EC%84%9C%20FetchType.LAZY%EA%B0%80%20%EC%9E%91%EB%8F%99%ED%95%98%EC%A7%80%20%EC%95%8A%EC%9D%84%20%EB%95%8C.md)
 - [영속성 전이(Cascade)와 고아 객체(orphanRemoval) 차이](https://github.com/eastperson/TIL/blob/main/JPA/%EC%98%81%EC%86%8D%EC%84%B1%20%EC%A0%84%EC%9D%B4(Cascade)%EC%99%80%20%EA%B3%A0%EC%95%84%20%EA%B0%9D%EC%B2%B4(orphanRemoval)%20%EC%B0%A8%EC%9D%B4.md)
 - [@Modifying 사용시 영속성 컨텍스트 1차 캐시와 DB 간 데이터 동기화 문제](https://github.com/eastperson/TIL/blob/main/JPA/%40Modifying%20%EC%82%AC%EC%9A%A9%EC%8B%9C%20%EC%98%81%EC%86%8D%EC%84%B1%20%EC%BB%A8%ED%85%8D%EC%8A%A4%ED%8A%B8%201%EC%B0%A8%20%EC%BA%90%EC%8B%9C%EC%99%80%20DB%20%EA%B0%84%20%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EB%8F%99%EA%B8%B0%ED%99%94%20%EB%AC%B8%EC%A0%9C.md)
+- [JPA Entity 내부에서 이벤트를 발행하려면?](https://github.com/eastperson/TIL/blob/main/Spring/JPA%20Entity%20%EB%82%B4%EB%B6%80%EC%97%90%EC%84%9C%20%EC%9D%B4%EB%B2%A4%ED%8A%B8%EB%A5%BC%20%EB%B0%9C%ED%96%89%ED%95%98%EB%A0%A4%EB%A9%B4%3F.md)
 
 ### Design Pattern
 - [Flyweight Pattern](https://github.com/eastperson/TIL/blob/main/Design_Pattern/Flyweight%20Pattern.md)
