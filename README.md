@@ -44,6 +44,9 @@
 - [@Modifying 사용시 영속성 컨텍스트 1차 캐시와 DB 간 데이터 동기화 문제](https://github.com/eastperson/TIL/blob/main/JPA/%40Modifying%20%EC%82%AC%EC%9A%A9%EC%8B%9C%20%EC%98%81%EC%86%8D%EC%84%B1%20%EC%BB%A8%ED%85%8D%EC%8A%A4%ED%8A%B8%201%EC%B0%A8%20%EC%BA%90%EC%8B%9C%EC%99%80%20DB%20%EA%B0%84%20%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EB%8F%99%EA%B8%B0%ED%99%94%20%EB%AC%B8%EC%A0%9C.md)
 - [JPA Entity 내부에서 이벤트를 발행하려면?](https://github.com/eastperson/TIL/blob/main/Spring/JPA%20Entity%20%EB%82%B4%EB%B6%80%EC%97%90%EC%84%9C%20%EC%9D%B4%EB%B2%A4%ED%8A%B8%EB%A5%BC%20%EB%B0%9C%ED%96%89%ED%95%98%EB%A0%A4%EB%A9%B4%3F.md)
 
+### Netty
+- [EventLoopGroup이란?](https://github.com/eastperson/TIL/blob/main/netty/EventLoopGroup%EC%9D%B4%EB%9E%80%3F.md)
+
 ### Design Pattern
 - [Flyweight Pattern](https://github.com/eastperson/TIL/blob/main/Design_Pattern/Flyweight%20Pattern.md)
 
