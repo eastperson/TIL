@@ -6,7 +6,7 @@
 
 ## Transactional의 구현체
 
-- 스프링은 트랜잭션으 만들거나 commit, rollback을 하기 위해 프록시 혹은 byte-code를 만들어낸다.
+- 스프링은 트랜잭션을 만들거나 commit, rollback을 하기 위해 프록시 혹은 byte-code를 만들어낸다.
 - proxy를 사용하는 경우 @Transacitonal을 내부 메소드 호출하면 무시된다.
 - @Transactional을 붙인 메서드를 호출한다면 스프링은 몇몇 트랜잭션 매니징 코드를 @Transactional 메서드를 호출할 때 둘러싼다.
 
@@ -128,7 +128,7 @@ return emptyTransaction;
 ```
 
 ## NOT_SUPPORTED 
-- 만약 트랜잭션이 존제한다면 스프링은 그것을 중단시키고 그런 다음 비즈니스 로직을 트랜잭션이 없이 동작시킨다.
+- 만약 트랜잭션이 존재한다면 스프링은 그것을 중단시키고 그런 다음 비즈니스 로직을 트랜잭션이 없이 동작시킨다.
 
 > The JTATransactionManager supports real transaction suspension out-of-the-box. Others simulate the suspension by holding a reference to the existing one and then clearing it from the thread context
 
