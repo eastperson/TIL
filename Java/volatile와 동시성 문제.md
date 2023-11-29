@@ -73,7 +73,7 @@ public static int generateSerialNumber() {
 라고 한다. 이 문제는 메서드에 synchronized를 붙이고 volatile 키워드를 공유 필드에서 제거하면 해결된다. 다음의 코드는 synchrozied를 이용해 위의 문제를 해결한 수정된 코드이다.
 
 ```java
-private static volatile int nextSerialNumber = 0;
+private static int nextSerialNumber = 0;
 
 public static int generateSerialNumber() {
     increment();
