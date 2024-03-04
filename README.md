@@ -60,6 +60,7 @@
 - [2PC(two-phase commit)](https://github.com/eastperson/TIL/blob/main/Database/2PC(two-phase%20commit).md)
 - [동시성 이슈의 사례와 트랜잭션 격리수준](https://github.com/eastperson/TIL/blob/main/Database/%EB%8F%99%EC%8B%9C%EC%84%B1%20%EC%9D%B4%EC%8A%88%EC%9D%98%20%EC%82%AC%EB%A1%80%EC%99%80%20%ED%8A%B8%EB%9E%9C%EC%9E%AD%EC%85%98%20%EA%B2%A9%EB%A6%AC%EC%88%98%EC%A4%80.md)
 - [Soft Delete vs Hard Delete](https://github.com/eastperson/TIL/blob/main/Database/Soft%20Delete%20vs%20Hard%20Delete.md)
+- [NL 조인, 소트 머지 조인, 해시 조인](https://github.com/eastperson/TIL/blob/main/Database/NL%20%EC%A1%B0%EC%9D%B8%2C%20%EC%86%8C%ED%8A%B8%20%EB%A8%B8%EC%A7%80%20%EC%A1%B0%EC%9D%B8%2C%20%ED%95%B4%EC%8B%9C%20%EC%A1%B0%EC%9D%B8.md)
 
 ### 자료구조 & 알고리즘
 
